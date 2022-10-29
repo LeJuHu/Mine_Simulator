@@ -33,10 +33,11 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     GameObject Save_UI;
 
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    GameObject _shop_ui;
+
+    [SerializeField]
+    TP _tp;
 
     void Update()
     {
@@ -47,9 +48,12 @@ public class UIManager : MonoBehaviour
         MP_EXP_UI();
         MineLV_UI();
         Gold_UI();
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Save_UI.SetActive(true);
+            if(_shop_ui.activeSelf == false && _tp._active == false){
+                Save_UI.SetActive(true);
+            }
         }
     }
 
