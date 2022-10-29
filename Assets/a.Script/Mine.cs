@@ -11,11 +11,6 @@ public class Mine : MonoBehaviour
     [SerializeField]
     int SceneLevel;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         DecreaseHP();

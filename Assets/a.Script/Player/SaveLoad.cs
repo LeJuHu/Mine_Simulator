@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SaveLoad : MonoBehaviour
 {
@@ -9,17 +10,7 @@ public class SaveLoad : MonoBehaviour
 
     private static bool s_loadedFirstTime = false;
 
-    private static SaveLoad _sl = null;
-
-    public static SaveLoad GetInstance()
-    {
-
-        if (_sl == null)
-            _sl = new SaveLoad();
-
-        return _sl;
-    }
-
+    private Scene _scene;
 
     void Start()
     {
@@ -28,41 +19,39 @@ public class SaveLoad : MonoBehaviour
             GameLoad();
             s_loadedFirstTime = true;
         }
-        
+        if (s_loadedFirstTime == true)
+        {
+            if (SceneManager.GetActiveScene().name == PlayerPrefs.GetString("Scene"))
+            {
+                _player.transform.position
+                = new Vector3(PlayerPrefs.GetFloat("PlayerX"),
+                PlayerPrefs.GetFloat("PlayerY"), PlayerPrefs.GetFloat("PlayerZ"));
+            }
+        }
     }
 
     public void GameSave()
     {
-        //Gold = PlayerInfo.GetInstance().GetGold();
-        /*
-        HP = PlayerInfo.GetInstance().GetHP();
-        MaxHP = PlayerInfo.GetInstance().GetMaxHP();
-        MP = PlayerInfo.GetInstance().GetMP();
-        MaxMP = PlayerInfo.GetInstance().GetMaxMP();
-        Level = PlayerInfo.GetInstance().GetLevel();
-        Exp = PlayerInfo.GetInstance().GetExp();
-        MaxExp = PlayerInfo.GetInstance().GetMaxExp();
-        MineExp = PlayerInfo.GetInstance().GetMineExp();
-        MaxMineExp = PlayerInfo.GetInstance().GetMaxMineExp();
-        MineLevel = PlayerInfo.GetInstance().GetMineLevel();*/
+        _scene = SceneManager.GetActiveScene();
+
+        PlayerPrefs.SetString("Scene", _scene.name);
 
         PlayerPrefs.SetInt("Gold", PlayerInfo.GetInstance().GetGold());
-        /*
-        PlayerPrefs.SetFloat("HP", HP);
-        PlayerPrefs.SetFloat("MaxHP", MaxHP);
-        PlayerPrefs.SetFloat("MP", MP);
-        PlayerPrefs.SetFloat("MaxMP", MaxMP);
-        PlayerPrefs.SetInt("Level", Level);
-        PlayerPrefs.SetInt("Exp", Exp);
-        PlayerPrefs.SetInt("MaxExp", MaxExp);
-        PlayerPrefs.SetFloat("MineExp", MineExp);
-        PlayerPrefs.SetFloat("MaxMineExp", MaxMineExp);
-        PlayerPrefs.SetFloat("MineLevel", MineLevel);
+        PlayerPrefs.SetFloat("HP", PlayerInfo.GetInstance().GetHP());
+        PlayerPrefs.SetFloat("MaxHP", PlayerInfo.GetInstance().GetMaxHP());
+        PlayerPrefs.SetFloat("MP", PlayerInfo.GetInstance().GetMP());
+        PlayerPrefs.SetFloat("MaxMP", PlayerInfo.GetInstance().GetMaxMP());
+        PlayerPrefs.SetInt("Level", PlayerInfo.GetInstance().GetLevel());
+        PlayerPrefs.SetInt("Exp", PlayerInfo.GetInstance().GetExp());
+        PlayerPrefs.SetInt("MaxExp", PlayerInfo.GetInstance().GetMaxExp());
+        PlayerPrefs.SetFloat("MineExp", PlayerInfo.GetInstance().GetMineExp());
+        PlayerPrefs.SetFloat("MaxMineExp", PlayerInfo.GetInstance().GetMaxMineExp());
+        PlayerPrefs.SetFloat("MineLevel", PlayerInfo.GetInstance().GetMineLevel());
 
         //player.x, player.y
         PlayerPrefs.SetFloat("PlayerX", _player.transform.position.x);
         PlayerPrefs.SetFloat("PlayerY", _player.transform.position.y);
-        PlayerPrefs.SetFloat("PlayerZ", _player.transform.position.z);*/
+        PlayerPrefs.SetFloat("PlayerZ", _player.transform.position.z);
 
         PlayerPrefs.Save();
     }
@@ -71,20 +60,19 @@ public class SaveLoad : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("Gold"))
         {
-            PlayerInfo.GetInstance().SetGold( PlayerPrefs.GetInt("Gold") );
-            /*
-            HP = PlayerPrefs.GetFloat("HP");
-            MaxHP = PlayerPrefs.GetFloat("MaxHP");
-            MP = PlayerPrefs.GetFloat("MP");
-            MaxMP = PlayerPrefs.GetFloat("MaxMP");
-            Level = PlayerPrefs.GetInt("Level");
-            Exp = PlayerPrefs.GetInt("Exp");
-            MaxExp = PlayerPrefs.GetInt("MaxExp");
-            MineExp = PlayerPrefs.GetFloat("MineExp");
-            MaxMineExp = PlayerPrefs.GetFloat("MaxMineExp");
-            MineLevel = PlayerPrefs.GetFloat("MineLevel");
+            SceneManager.LoadScene(PlayerPrefs.GetString("Scene"));
 
-            _player.transform.position = new Vector3(x, y, z);*/
+            PlayerInfo.GetInstance().SetGold( PlayerPrefs.GetInt("Gold") );
+            PlayerInfo.GetInstance().SetHP(PlayerPrefs.GetFloat("HP"));
+            PlayerInfo.GetInstance().SetMaxHP(PlayerPrefs.GetFloat("MaxHP"));
+            PlayerInfo.GetInstance().SetMP(PlayerPrefs.GetFloat("MP"));
+            PlayerInfo.GetInstance().SetMaxMP(PlayerPrefs.GetFloat("MaxMP"));
+            PlayerInfo.GetInstance().SetLevel(PlayerPrefs.GetInt("Level"));
+            PlayerInfo.GetInstance().SetExp(PlayerPrefs.GetInt("Exp"));
+            PlayerInfo.GetInstance().SetMaxExp(PlayerPrefs.GetInt("MaxExp"));
+            PlayerInfo.GetInstance().SetMineExp(PlayerPrefs.GetFloat("MineExp"));
+            PlayerInfo.GetInstance().SetMaxMineExp(PlayerPrefs.GetFloat("MaxMineExp"));
+            PlayerInfo.GetInstance().SetMineLevel(PlayerPrefs.GetFloat("MineLevel"));
         }
     }
 }

@@ -7,8 +7,7 @@ public class SaveUI : MonoBehaviour
     [SerializeField]
     GameObject Save_UI;
 
-    [SerializeField]
-    GameObject _SoundManager;
+    public SaveLoad _save;
 
     void Start()
     {
@@ -18,13 +17,7 @@ public class SaveUI : MonoBehaviour
     public void Save()
     {
         Save_UI.SetActive(false);
-    }
-
-    public void Sound()
-    {
-        _SoundManager.SetActive(true);
-        Save_UI.SetActive(false);
-
+        _save.GameSave();
     }
 
     public void Back()
@@ -35,6 +28,7 @@ public class SaveUI : MonoBehaviour
     public void EndGame()
     {
         Debug.Log("End Game.");
+        _save.GameSave();
         Application.Quit();
     }
 }

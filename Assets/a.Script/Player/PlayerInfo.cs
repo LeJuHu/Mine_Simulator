@@ -46,8 +46,20 @@ public class PlayerInfo
     private int Exp = 0    ;
     public int GetExp() { return Exp; }
     public int GetMaxExp() { return MaxExp; }
+    public void SetExp(int setexp) {
+        Exp = setexp;
+    }
+    public void SetMaxExp(int setmaxexp)
+    {
+        MaxExp = setmaxexp;
+    }
+
 
     public int GetLevel() { return Level; }
+    public void SetLevel(int setlevel)
+    {
+        Level = setlevel;
+    }
     public void AddExp(int addExp) 
     { 
         Exp += addExp;
@@ -90,15 +102,22 @@ public class PlayerInfo
     //////////////////[ HP ]//////////////////
 
     private float DefaultMaxHP = 100;
+    private float HP = 0;
     private float MaxHP = 100;
     public float GetMaxHP() { return MaxHP; }
+    public void SetHP(float sethp)
+    {
+        HP = sethp;
+    }
+    public void SetMaxHP(float setmaxhp)
+    {
+        MaxHP = setmaxhp;
+    }
+
     public void UpdateMaxHP()
     {
         MaxHP = DefaultMaxHP * Level;
-        HP = MaxHP;
     }
-
-    private float HP =  0;
     public void MinusHP(float minusHP)
     {
         HP -= minusHP;
@@ -109,16 +128,21 @@ public class PlayerInfo
         }
     }
     public float GetHP() { return HP; }
-
+/*
     public void SetHP(float s_HP)
     {
         HP = s_HP;
-    }
+    }*/
 
     //////////////////[ Mine Level ]/////////////////////
     private float MineExp = 0;
     public float GetMineExp() { return MineExp; }
-    public void AddMineExp(int addMineExp)
+    public void SetMineExp(float setmineexp)
+    {
+        MineExp = setmineexp;
+    }
+    
+    public void AddMineExp(float addMineExp)
     {
         MineExp += addMineExp;
         MineLevelUP();
@@ -126,9 +150,17 @@ public class PlayerInfo
 
     private float MaxMineExp = 1000;
     public float GetMaxMineExp() { return MaxMineExp; }
+    public void SetMaxMineExp(float setmaxmineexp)
+    {
+        MaxMP = setmaxmineexp;
+    }
 
     private float MineLevel = 1;
     public float GetMineLevel() { return MineLevel; }
+    public void SetMineLevel(float setminelevel)
+    {
+        MineLevel = setminelevel;
+    }
 
     public void MineLevelUP()
     {
@@ -149,18 +181,23 @@ public class PlayerInfo
     private float MP = 0;
     public float GetMaxMP() { return MaxMP; }
     public float GetMP() { return MP; }
+    public void SetMP(float setmp)
+    {
+        MP = setmp;
+    }
+    public void SetMaxMP(float setmaxmp)
+    {
+        MaxMP = setmaxmp;
+    }
 
     public void UpdateMaxMP()
     {
         MaxMP = DefaultMaxMP * MineLevel;
-        MP = MaxMP;
     }
 
-    public void MinusMP(int minusMP)
+    public void MinusMP(float minusMP)
     {
         MP -= minusMP;
         MP = Mathf.Max(0, MP);
     }
-    
-    
 }

@@ -13,6 +13,8 @@ public class Ore : MonoBehaviour
     [SerializeField]
     int AddGold = 1000;
     [SerializeField]
+    int minusMP = 20;
+    [SerializeField]
     AudioSource MiningSFX;
 
     private void OnTriggerEnter(Collider other)
@@ -35,6 +37,7 @@ public class Ore : MonoBehaviour
         PlayerInfo.GetInstance().AddExp(AddExp);
         PlayerInfo.GetInstance().AddGold(AddGold);
         EarnUI.GetInstance().Show(AddExp, AddGold);
+        PlayerInfo.GetInstance().MinusMP(minusMP);
     }
 
     private void Fail()
@@ -42,5 +45,6 @@ public class Ore : MonoBehaviour
         PlayerInfo.GetInstance().AddExp(AddExp / 3);
         PlayerInfo.GetInstance().AddGold(AddGold / 3);
         EarnUI.GetInstance().Show(AddExp / 3, AddGold / 3);
+        PlayerInfo.GetInstance().MinusMP(minusMP);
     }
 }

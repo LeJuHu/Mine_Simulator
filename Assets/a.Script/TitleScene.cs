@@ -6,9 +6,23 @@ using UnityEngine.SceneManagement;
 public class TitleScene : MonoBehaviour
 {
     [SerializeField]
-    int SceneLevel;
+    GameObject Title;
+    [SerializeField]
+    GameObject NewLoad;
 
-    public void touchToStart(){
-        SceneManager.LoadScene(SceneLevel);
+    [SerializeField]
+    private int SceneN;
+
+    public void TouchTostart(){
+        SceneManager.LoadScene(SceneN);
+    }
+
+    public void TitleTouch(){
+        NewLoad.SetActive(true);
+        Title.SetActive(false);
+    }
+
+    public void Back(){
+
     }
 }

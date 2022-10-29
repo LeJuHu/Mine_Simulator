@@ -22,6 +22,8 @@ public class TP : MonoBehaviour
     public void OnClickGo()
     {
         SceneManager.LoadScene(SceneLevel);
+        PlayerInfo.GetInstance().SetHP(PlayerInfo.GetInstance().GetMaxHP());
+        PlayerInfo.GetInstance().SetMP(PlayerInfo.GetInstance().GetMaxMP());
     }
 
     public void OnClickBack()
