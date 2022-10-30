@@ -66,6 +66,11 @@ public class PlayerInfo
         LevelUP();
     }
 
+    public void MinExp(){
+        Exp = 0;
+        LevelDown();
+    }
+
     private int MaxExp = 100;
 
     private int Level = 1;
@@ -86,14 +91,13 @@ public class PlayerInfo
 
     public void LevelDown()
     {
-        if (Exp < MaxExp/2)
+        if (Exp == 0)
         {
-            if (Level > 1 && Exp > 0)
+            if (Level > 1)
             {
-                Exp = (int)(MaxExp * 0.9) ;
                 Level -= 1;
                 MaxExp /= 2;
-                Exp = 0;
+                Exp = (int)(MaxExp * 0.7) ;
                 UpdateMaxHP();
             }
         }
@@ -152,7 +156,7 @@ public class PlayerInfo
     public float GetMaxMineExp() { return MaxMineExp; }
     public void SetMaxMineExp(float setmaxmineexp)
     {
-        MaxMP = setmaxmineexp;
+        MaxMineExp = setmaxmineexp;
     }
 
     private float MineLevel = 1;
@@ -193,6 +197,7 @@ public class PlayerInfo
     public void UpdateMaxMP()
     {
         MaxMP = DefaultMaxMP * MineLevel;
+        MP = MaxMP;
     }
 
     public void MinusMP(float minusMP)

@@ -29,5 +29,7 @@ public class Mine : MonoBehaviour
     {
         SceneManager.LoadScene(SceneLevel);
         PlayerInfo.GetInstance().SetHP(PlayerInfo.GetInstance().GetMaxHP());
+        PlayerInfo.GetInstance().SetMP(PlayerInfo.GetInstance().GetMaxMP());
+        PlayerInfo.GetInstance().MinExp();
     }
 }

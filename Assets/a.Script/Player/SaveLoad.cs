@@ -18,10 +18,7 @@ public class SaveLoad : MonoBehaviour
         {
             GameLoad();
             s_loadedFirstTime = true;
-        }
-        if (s_loadedFirstTime == true)
-        {
-            if (SceneManager.GetActiveScene().name == PlayerPrefs.GetString("Scene"))
+            if (SceneManager.GetActiveScene().name == PlayerPrefs.GetString("Scene",""))
             {
                 _player.transform.position
                 = new Vector3(PlayerPrefs.GetFloat("PlayerX"),
@@ -60,7 +57,7 @@ public class SaveLoad : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("Gold"))
         {
-            SceneManager.LoadScene(PlayerPrefs.GetString("Scene"));
+            
 
             PlayerInfo.GetInstance().SetGold( PlayerPrefs.GetInt("Gold") );
             PlayerInfo.GetInstance().SetHP(PlayerPrefs.GetFloat("HP"));
