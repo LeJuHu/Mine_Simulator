@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331a178fabc16204abefe3983aa591f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MinHP: 1
+  MinHP: 8
   SceneLevel: 1

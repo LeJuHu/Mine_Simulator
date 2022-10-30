@@ -39,6 +39,12 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     TP _tp;
 
+    [SerializeField]
+    GameObject Status_UI;
+    
+    [SerializeField]
+    AudioSource SoundEffect;
+
     void Update()
     {
         EXP_UI();
@@ -53,6 +59,19 @@ public class UIManager : MonoBehaviour
         {
             if(_shop_ui.activeSelf == false && _tp._active == false){
                 Save_UI.SetActive(true);
+                SoundEffect.Play();
+            }
+        }
+        if(Status_UI.activeSelf == false){
+            if (Input.GetKeyDown(KeyCode.Tab)){
+                Status_UI.SetActive(true);
+                SoundEffect.Play();
+            }
+        }
+        else{
+            if (Input.GetKeyDown(KeyCode.Tab)){
+                Status_UI.SetActive(false);
+                SoundEffect.Play();
             }
         }
     }

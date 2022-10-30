@@ -57,8 +57,6 @@ public class SaveLoad : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("Gold"))
         {
-            
-
             PlayerInfo.GetInstance().SetGold( PlayerPrefs.GetInt("Gold") );
             PlayerInfo.GetInstance().SetHP(PlayerPrefs.GetFloat("HP"));
             PlayerInfo.GetInstance().SetMaxHP(PlayerPrefs.GetFloat("MaxHP"));
