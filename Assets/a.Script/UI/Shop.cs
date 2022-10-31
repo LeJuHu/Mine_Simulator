@@ -25,6 +25,10 @@ public class Shop : MonoBehaviour
     GameObject _x;
     GameObject _b;
 
+    private void Update() {
+        
+    }
+
     public void WeaponGold(int _gold)
     {
         Gold.text = _gold.ToString();

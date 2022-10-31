@@ -86,7 +86,7 @@ public class StarCatch : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             if (m_Slider.value > s_SqrPosition - 0.05f && m_Slider.value < s_SqrPosition + 0.05f)
             {

@@ -971,11 +971,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: StarCatch
       objectReference: {fileID: 0}
-    - target: {fileID: 2760989851913248415, guid: 393febaac3ffe544985609273b239fa4,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 393febaac3ffe544985609273b239fa4, type: 3}
 --- !u!4 &1523530777 stripped
@@ -1901,10 +1896,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 600324115, guid: 60bf7662b39270b45ad72eddfbe63f7a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240784297, guid: 60bf7662b39270b45ad72eddfbe63f7a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240784297, guid: 60bf7662b39270b45ad72eddfbe63f7a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 811935721633010292, guid: 60bf7662b39270b45ad72eddfbe63f7a,
+        type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 811935722519517969, guid: 60bf7662b39270b45ad72eddfbe63f7a,
+        type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8508434123017419641, guid: 60bf7662b39270b45ad72eddfbe63f7a,
         type: 3}
       propertyPath: m_Name
       value: ShopCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508434123017419641, guid: 60bf7662b39270b45ad72eddfbe63f7a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8508434123017419645, guid: 60bf7662b39270b45ad72eddfbe63f7a,
         type: 3}
