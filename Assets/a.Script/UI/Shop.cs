@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Shop : MonoBehaviour
@@ -21,6 +22,8 @@ public class Shop : MonoBehaviour
 
     private int _useGold;
     private int _addExp;
+    GameObject _x;
+    GameObject _b;
 
     public void WeaponGold(int _gold)
     {
@@ -34,8 +37,12 @@ public class Shop : MonoBehaviour
         _addExp = _mineExp;
     }
 
-    public void WeaponName(string _weaponName){
-        Name = _weaponName;
+    public void x_Image(GameObject image){
+        _x = image;
+    }
+
+    public void b_Button(GameObject _button){
+        _b = _button;
     }
 
     public void ActiveBuy(){
@@ -45,12 +52,15 @@ public class Shop : MonoBehaviour
     }
 
     public void Buy(){
-        ((ShopCanvas.transform.Find(Name).gameObject).transform.Find("X").gameObject).SetActive(true);
-        Gold.text = "Purchased";
-        MineExp.text = "Purchased";
-        PlayerInfo.GetInstance().UseGold(_useGold);
-        PlayerInfo.GetInstance().AddMineExp(_addExp);
-        _buyButton.SetActive(false);
+        if(PlayerInfo.GetInstance().GetGold() > _useGold){
+            _x.SetActive(true);
+            _b.SetActive(false);
+            Gold.text = "Purchased";
+            MineExp.text = "Purchased";
+            PlayerInfo.GetInstance().UseGold(_useGold);
+            PlayerInfo.GetInstance().AddMineExp(_addExp);
+            _buyButton.SetActive(false);
+        }
     }
 
     
