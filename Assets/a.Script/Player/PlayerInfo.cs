@@ -205,4 +205,20 @@ public class PlayerInfo
         MP -= minusMP;
         MP = Mathf.Max(0, MP);
     }
+
+    /////////////[Weapon]/////////////
+    List<int> Equiplist = new List<int>();
+
+    public List<int> GetEquipList() { return Equiplist; }
+
+    public void PurchasedWeapon(int WeaponNumber){
+        Equiplist.Add(WeaponNumber);
+    }
+
+    public bool EquipWeapon(int w_Number){
+        if(Equiplist.Contains(w_Number)){
+            return true;
+        }
+        return false;
+    }
 }

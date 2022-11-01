@@ -33,6 +33,11 @@ public class SaveLoad : MonoBehaviour
 
         PlayerPrefs.SetString("Scene", _scene.name);
 
+        PlayerPrefs.SetInt("EquipList", PlayerInfo.GetInstance().GetEquipList().Count);
+
+        for (int i = 0; i < PlayerInfo.GetInstance().GetEquipList().Count; i++)
+            PlayerPrefs.SetInt("Equip" + i, PlayerInfo.GetInstance().GetEquipList()[i]);
+
         PlayerPrefs.SetInt("Gold", PlayerInfo.GetInstance().GetGold());
         PlayerPrefs.SetFloat("HP", PlayerInfo.GetInstance().GetHP());
         PlayerPrefs.SetFloat("MaxHP", PlayerInfo.GetInstance().GetMaxHP());
@@ -57,7 +62,16 @@ public class SaveLoad : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("Gold"))
         {
-            PlayerInfo.GetInstance().SetGold( PlayerPrefs.GetInt("Gold") );
+            int equipCount = PlayerPrefs.GetInt("EquipList", 0);
+            for ( int i = 0; i < equipCount; i++ )
+            {
+                int weaponNum = PlayerPrefs.GetInt("Equip" + i, -1);
+                if ( weaponNum != -1)
+                    PlayerInfo.GetInstance().PurchasedWeapon(weaponNum);
+            } 
+            
+
+            PlayerInfo.GetInstance().SetGold(PlayerPrefs.GetInt("Gold") );
             PlayerInfo.GetInstance().SetHP(PlayerPrefs.GetFloat("HP"));
             PlayerInfo.GetInstance().SetMaxHP(PlayerPrefs.GetFloat("MaxHP"));
             PlayerInfo.GetInstance().SetMP(PlayerPrefs.GetFloat("MP"));

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 21416058}
   - component: {fileID: 21416057}
   m_Layer: 5
-  m_Name: X
+  m_Name: 1X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -514,7 +514,7 @@ GameObject:
   - component: {fileID: 600324118}
   - component: {fileID: 600324117}
   m_Layer: 5
-  m_Name: X
+  m_Name: 2X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2926,7 +2926,7 @@ GameObject:
   - component: {fileID: 811935721361266768}
   - component: {fileID: 1240784297}
   m_Layer: 5
-  m_Name: Image
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3041,7 +3041,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1200
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3053,7 +3053,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 120
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3075,7 +3075,7 @@ MonoBehaviour:
         m_MethodName: x_Image
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 811935721361266770}
+          m_ObjectArgument: {fileID: 600324115}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3087,7 +3087,7 @@ MonoBehaviour:
         m_MethodName: b_Button
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 600324115}
+          m_ObjectArgument: {fileID: 811935721361266770}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3417,6 +3417,7 @@ GameObject:
   - component: {fileID: 811935721633010294}
   - component: {fileID: 811935721633010292}
   - component: {fileID: 811935721633010295}
+  - component: {fileID: 1539619095}
   m_Layer: 5
   m_Name: Weapon002
   m_TagString: Untagged
@@ -3484,6 +3485,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1539619095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811935721633010281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1973c9ed92e9b634e8d26a939b094027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number: 2
+  N: {fileID: 811935721361266770}
+  NX: {fileID: 600324115}
 --- !u!1 &811935721763705937
 GameObject:
   m_ObjectHideFlags: 0
@@ -4240,6 +4256,7 @@ GameObject:
   - component: {fileID: 811935722519517971}
   - component: {fileID: 811935722519517969}
   - component: {fileID: 811935722519517968}
+  - component: {fileID: 332658929}
   m_Layer: 5
   m_Name: Weapon001
   m_TagString: Untagged
@@ -4276,7 +4293,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811935722519517970}
-  m_CullTransparentMesh: 0
+  m_CullTransparentMesh: 1
 --- !u!114 &811935722519517968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4307,6 +4324,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &332658929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811935722519517970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1973c9ed92e9b634e8d26a939b094027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number: 1
+  N: {fileID: 811935722638503258}
+  NX: {fileID: 21416055}
 --- !u!1 &811935722638503258
 GameObject:
   m_ObjectHideFlags: 0
@@ -4320,7 +4352,7 @@ GameObject:
   - component: {fileID: 811935722638503256}
   - component: {fileID: 2130579816}
   m_Layer: 5
-  m_Name: Image
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4484,6 +4516,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 21416055}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2379126946528722123}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: w_Number
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
