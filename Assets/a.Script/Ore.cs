@@ -25,7 +25,7 @@ public class Ore : MonoBehaviour
             {
                 MiningSFX.time = 0.2f;
                 MiningSFX.enabled = true;
-                StarCatch.StartGame(Success, Fail);
+                StarCatch.StartGame(Success,Fail);
                 Ore1.SetActive(false);
                 Ore2.SetActive(true);
             }
@@ -42,9 +42,9 @@ public class Ore : MonoBehaviour
 
     private void Fail()
     {
-        PlayerInfo.GetInstance().AddExp(AddExp / 3);
-        PlayerInfo.GetInstance().AddGold(AddGold / 3);
-        EarnUI.GetInstance().Show(AddExp / 3, AddGold / 3);
+        PlayerInfo.GetInstance().AddExp(AddExp / 4);
+        PlayerInfo.GetInstance().AddGold(AddGold / 4);
+        EarnUI.GetInstance().Show(AddExp / 4, AddGold / 4);
         PlayerInfo.GetInstance().MinusMP(minusMP);
     }
 }
