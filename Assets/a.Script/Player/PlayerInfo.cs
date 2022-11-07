@@ -63,7 +63,9 @@ public class PlayerInfo
     public void AddExp(int addExp) 
     { 
         Exp += addExp;
-        LevelUP();
+        while(Exp > MaxExp){
+            LevelUP();
+        }
     }
 
     public void MinExp(){
@@ -71,7 +73,7 @@ public class PlayerInfo
         LevelDown();
     }
 
-    private int MaxExp = 100;
+    private int MaxExp = 500;
 
     private int Level = 1;
 
@@ -149,7 +151,9 @@ public class PlayerInfo
     public void AddMineExp(float addMineExp)
     {
         MineExp += addMineExp;
-        MineLevelUP();
+        while (MineExp > MaxMineExp){
+            MineLevelUP();
+        }
     }
 
     private float MaxMineExp = 1000;

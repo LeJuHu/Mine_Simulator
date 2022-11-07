@@ -362,9 +362,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ore1: {fileID: 3539545309988144165}
   Ore2: {fileID: 9014668494848649026}
-  AddExp: 100
-  AddGold: 1000
-  minusMP: 20
+  AddExp: 450000
+  AddGold: 150000
+  minusMP: 220
   MiningSFX: {fileID: 1252660380}
 --- !u!65 &5282106534626087637
 BoxCollider:

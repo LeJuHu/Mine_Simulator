@@ -9,14 +9,14 @@ public class Ore : MonoBehaviour
     [SerializeField]
     GameObject Ore2;
     [SerializeField]
-    int AddExp = 100;
+    int AddExp;
     [SerializeField]
-    int AddGold = 1000;
+    int AddGold;
     [SerializeField]
-    int minusMP = 20;
+    int minusMP;
     [SerializeField]
     AudioSource MiningSFX;
-
+    
     private void OnTriggerEnter(Collider other)
     {
         if (Ore1.activeSelf == true)
@@ -34,10 +34,14 @@ public class Ore : MonoBehaviour
 
     private void Success()
     {
-        PlayerInfo.GetInstance().AddExp(AddExp);
-        PlayerInfo.GetInstance().AddGold(AddGold);
-        EarnUI.GetInstance().Show(AddExp, AddGold);
-        PlayerInfo.GetInstance().MinusMP(minusMP);
+        int Exp = Random.Range(AddExp/2, AddExp*2);
+        int Gold = Random.Range(AddGold / 2, AddGold * 2);
+        int m_MP = Random.Range(minusMP / 2, minusMP * 2);
+
+        PlayerInfo.GetInstance().AddExp(Exp);
+        PlayerInfo.GetInstance().AddGold(Gold);
+        EarnUI.GetInstance().Show(Exp, Gold);
+        PlayerInfo.GetInstance().MinusMP(m_MP);
     }
 
     private void Fail()
