@@ -9,11 +9,20 @@ EditorBuildSettings:
     path: Assets/a.Scenes/0)Start.unity
     guid: bb426625aaed0a44396b3a601c6cd934
   - enabled: 1
-    path: Assets/a.Scenes/SpawnTutorial.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/a.Scenes/1)Main.unity
+    guid: c56077c77b41d624895344e30d866796
   - enabled: 1
-    path: Assets/a.Scenes/Test.unity
-    guid: ff575eb01a88f38408707616a48e3ff2
+    path: Assets/a.Scenes/2)Plain.unity
+    guid: 7001af42e6a674ee78f404f563b8411b
+  - enabled: 1
+    path: Assets/a.Scenes/3)Snowey.unity
+    guid: d97f9281285834c389e710951c41e9ff
+  - enabled: 1
+    path: Assets/a.Scenes/4)Desert.unity
+    guid: 6718a26a053794b7289f1c6306eb874b
+  - enabled: 1
+    path: Assets/a.Scenes/5)Castle.unity
+    guid: 13f88900c56e6426994d2de9e15038fe
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
       type: 2}

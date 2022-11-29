@@ -28,7 +28,6 @@ public class SaveUI : MonoBehaviour
 
     public void EndGame()
     {
-        Debug.Log("End Game.");
         _save.GameSave();
         Application.Quit();
     }

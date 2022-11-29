@@ -21,13 +21,15 @@ public class Ore : MonoBehaviour
     {
         if (Ore1.activeSelf == true)
         {
-            if (other.gameObject.tag == "Mining")
-            {
-                MiningSFX.time = 0.2f;
-                MiningSFX.enabled = true;
-                StarCatch.StartGame(Success,Fail);
-                Ore1.SetActive(false);
-                Ore2.SetActive(true);
+            if( PlayerInfo.GetInstance().GetMP() != 0){
+                if (other.gameObject.tag == "Mining")
+                {
+                    MiningSFX.time = 0.2f;
+                    MiningSFX.enabled = true;
+                    StarCatch.StartGame(Success,Fail);
+                    Ore1.SetActive(false);
+                    Ore2.SetActive(true);
+                }
             }
         }
     }

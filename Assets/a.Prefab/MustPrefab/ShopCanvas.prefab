@@ -3041,7 +3041,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1200
+          m_IntArgument: 2500
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3053,7 +3053,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 120
+          m_IntArgument: 1050
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3090,6 +3090,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 811935721361266770}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2379126946528722123}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: w_Number
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4479,7 +4491,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 100
+          m_IntArgument: 700
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5616,7 +5628,7 @@ GameObject:
   - component: {fileID: 8508434122110384079}
   - component: {fileID: 906315698}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5731,7 +5743,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 13000
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5743,7 +5755,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1650
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5780,6 +5792,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 1361997893}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2379126946528722123}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: w_Number
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6093,7 +6117,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 33000
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6105,7 +6129,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2450
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6521,7 +6545,7 @@ GameObject:
   - component: {fileID: 8508434122229796018}
   - component: {fileID: 1004094678}
   m_Layer: 5
-  m_Name: Image
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6636,7 +6660,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5000
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6648,7 +6672,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1250
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6689,6 +6713,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2379126946528722123}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: w_Number
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8508434122482735203
 GameObject:
   m_ObjectHideFlags: 0
@@ -6702,7 +6738,7 @@ GameObject:
   - component: {fileID: 8508434122482735205}
   - component: {fileID: 499121250}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6817,7 +6853,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 20000
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6829,7 +6865,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2000
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6866,6 +6902,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 1928162662}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2379126946528722123}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: w_Number
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7426,7 +7474,7 @@ GameObject:
   - component: {fileID: 8508434122668492259}
   - component: {fileID: 164733421}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7541,7 +7589,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 8500
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7553,7 +7601,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1500
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7590,6 +7638,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 1740055766}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2379126946528722123}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: w_Number
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7872,7 +7932,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8508434123017419645
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8824,7 +8884,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 48000
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8836,7 +8896,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3000
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

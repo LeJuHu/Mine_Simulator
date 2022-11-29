@@ -13,12 +13,7 @@ public class ShopNPC : MonoBehaviour
 
     [SerializeField]
     PlayerManager _playerManager;
-
-    void Start()
-    {
-
-    }
-
+    
     void Update()
     {
         ShopUI();

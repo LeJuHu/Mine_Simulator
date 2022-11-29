@@ -13,10 +13,14 @@ public class StarCatch : MonoBehaviour
     private bool m_bRight = true;
 
     private OnSuccess m_dOnSuccess = null;
-    public void SetSuccessCallback(OnSuccess dOnSuccess) { m_dOnSuccess = dOnSuccess; }
+    public void SetSuccessCallback(OnSuccess dOnSuccess) { 
+        m_dOnSuccess = dOnSuccess; 
+    }
 
     private OnFail m_dOnFail = null;
-    public void SetFailCallback(OnFail dOnFail) { m_dOnFail = dOnFail; }
+    public void SetFailCallback(OnFail dOnFail) { 
+        m_dOnFail = dOnFail; 
+    }
 
     static private StarCatch s_StarCatch = null;
 
