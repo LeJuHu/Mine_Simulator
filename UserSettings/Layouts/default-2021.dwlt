@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 91
+  controlID: 49
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 115
+  controlID: 43
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -329,7 +329,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f0faffff
+      m_ExpandedIDs: 88fefdff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -395,22 +395,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/a.Scenes
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/a.Scenes
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\GitHub\Mine_Simulator
+  m_LastProjectPath: "/Users/lejuhu/\u1100\u1175\u11BA\u1112\u1165\u1107\u1173/Mine_Simulator"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 120}
-    m_SelectedIDs: 78790000
-    m_LastClickedID: 31096
-    m_ExpandedIDs: 00000000587900005a7900005c7900005e79000060790000627900006479000066790000687900006a7900006c79000000ca9a3b
+    scrollPos: {x: 0, y: 24}
+    m_SelectedIDs: 16720400
+    m_LastClickedID: 291350
+    m_ExpandedIDs: 0000000016720400
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -438,7 +438,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000587900005a7900005c7900005e79000060790000627900006479000066790000687900006a7900006c790000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
